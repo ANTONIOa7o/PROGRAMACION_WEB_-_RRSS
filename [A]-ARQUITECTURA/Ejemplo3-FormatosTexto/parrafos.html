@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Párrafo</title>
+</head>
+
+<body>
+    <h2 align="center">FORMATOS DE TEXTO LOGIGOS, FISICOS Y DE ESTRUCTURA</h2>
+    <h3>Direccion</h3>
+    <address align="right">Virgen del Lluc 38 <br> 28020 Madrid</address>
+    <hr width="65%">
+    <!---
+    🚀Formatos de estilo fisico, serán tambien etiquetas contenedoras muestran al usuario
+    aspectos y estilos definidos
+    Sintaxis:
+    ->Negrita <b></b>
+    ->Cursiva <i></i>
+    ->Tachado <s></s>
+    ->subrayado <u></u>
+    ->aumento de Tamaño <big></big>
+    ->diminuye tamaño <small></small>
+    ->Indice <sup></sup>
+    ->Subindice <sub></sub>
+    -->
+    <h3>Parrafos de estilo fisico</h3>
+    <p>
+        <u>
+            <b>Lorem ipsum dolor</b> sit amet.
+            Sapiente tempora dolorum cumque et?
+            Odit eaque <s>sapiente at maiores</s>! <br>
+            Adipisci dolorem sed incidunt officia?
+            Adipisci sequi explicabo fugiat doloremque! <br>
+            Voluptates atque architecto cumque molestiae.
+            At molestiae a exercitationem eius.
+            Neque voluptatum illo ab ipsum.
+            Vitae optio quae facere cum.
+            Accusamus odio modi <big>incidunt ducimus!</big>
+        </u>
+    </p>
+    <br>
+    <p>
+        Formula del Amoniaco: NH<sub>3</sub> <br>
+        Formala Logartimo Neperiano n: <big>L</big> <big>e</big> <sup>n</sup>
+    </p>
+    <h3>Parrafos de estilo lógico </h3>
+    <p>
+        <font size="7">
+            Estructura de Caracteres 1
+        </font> <br>
+        <font size="4">
+            Estructura de Caracteres 2
+        </font> <br>
+        <font size="1" color="red">
+            Estructura de Caracteres 3
+        </font>
+    </p>
+    <!--Los COLORES
+    
+        Una perspectiva visual, que depende del dispositivo y ademas del propio espectro 
+        de la luz RGB
+    -->
+    <h3 style="text-align: center;font-size:xx-large;font-style:normal;font-weight: bold;">Parrafos & dimension del
+        color </h3>
+    <!--Ante el gran trafico de etiquetas, atributos y anidaciones
+    surgio una nueva forma de representar los atributos y será a traves de 
+la etiqueta unica de estilos sintaxis: style="atributos:Valor; atributo2:Valor;"-->
+    <p style="font-size: x-large; color:rgb(142, 86, 32)">
+        Lorem, ipsum dolor.
+        Fugiat, totam cupiditate!
+        A, tenetur illum?
+    </p>
+    <p style="font-size:x-large; color: #8e56208c">
+        Lorem, ipsum dolor.
+        Fugiat, totam cupiditate!
+        A, tenetur illum?
+    </p>
+    <p style="font-size:x-large; color: #8c56208c">
+        Lorem, ipsum dolor.
+        Fugiat, totam cupiditate!
+        A, tenetur illum?
+    </p>
+    <!--Los colores, su referenciacion en el atributo styles
+
+🌈 rgb(r,g,b) Patrones de medida del solido del color. Vendrán acotados los valores
+0 y 255 partiendo de su espectro, siendo 0 su espectro de luz inexistente y 255 espectro
+de  luz máximmo  0 >= Color <=255
+🌈rgba (r,g,b,a),añade alpha, al elemento rgb, superponiendo una escala de grises mas entre
+los valores de 0 a 1
+🌈Hexadecimal, el mas extendido, definido en base 16, sintaxis: #RRVVAAXX, pero asociado
+a dos componentes de analisis letras y numeros, entendidos como FF(letra)  o OO (numero)
+donde 0 sera presencia minima de  color y F será 15 veces el valor de esa presencia de color
+https://htmlcolorcodes.com/
+
+
+
+-->
+    <hr>
+    <!--
+    Estructura de arquitectura base  
+    1.div (etiqueta de bloque)
+    2.span
+-->
+    <div>
+        <h2>div</h2>
+        <p> salto de linea, etiqueta de bloque, Importante!</p>
+        Trabaja de manera horizontal <span> span: sin salto de linea</span>
+    </div>
+
+    <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <h3>Colocacion de los parrafos[h3]</h3>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, cumque.
+            Dolore beatae vitae iste mollitia laboriosam, iure tempore vel omnis.
+            Aut sint asperiores iusto fugit temporibus perferendis illum modi debitis?
+            Natus consequuntur autem neque distinctio velit, impedit cumque adipisci perspiciatis.
+            Saepe veniam quia animi molestiae, asperiores veritatis perspiciatis officiis ab!
+            Iure nihil cumque quos ab consequuntur odit nemo doloribus tempora!
+            Ipsa inventore, totam iure laborum nostrum alias excepturi tempore. Molestias?
+            Et quis natus animi maxime laudantium iste tempore sint mollitia?
+            Architecto molestiae nesciunt voluptatem saepe unde earum cum minus quidem.
+            Repudiandae amet sunt alias impedit error reiciendis aperiam exercitationem molestiae.
+        </p>
+        <hr style="width: 90%;">
+
+        <p style="text-align:right ;color: #e73b3b;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, omnis.
+            Fugit illo illum consequatur harum recusandae autem tenetur. Eveniet, nemo?
+            Voluptate totam commodi dolore mollitia dignissimos odit nihil accusamus optio.
+            Natus ex, repudiandae provident aliquam praesentium temporibus ab perspiciatis velit!
+            Quod maiores recusandae earum similique amet dolores itaque cumque ut.
+            Provident laboriosam minima dolor harum? Explicabo dolores consectetur voluptatem non?
+            Nobis, obcaecati. Aliquid minus provident tempora inventore modi laboriosam? Hic?
+            Dolor possimus necessitatibus odit reiciendis tenetur et, laborum perspiciatis assumenda.
+            Error placeat rem tenetur reiciendis dolorem assumenda soluta officia magni!
+            Nulla dignissimos veritatis voluptatum, eos quaerat ut velit. Quia, a.
+        </p>
+        <hr  width="90%">
+
+        <p style="text-align: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis?
+            Ab culpa autem iure saepe doloremque architecto debitis, inventore voluptas.
+            Ipsum nemo beatae quas possimus optio distinctio eaque excepturi alias!
+            Velit animi suscipit, exercitationem error ad facilis blanditiis mollitia placeat?
+            Velit officia consequatur voluptates, obcaecati dolore possimus amet qui nemo?
+            Aspernatur temporibus tempora assumenda quo rerum praesentium blanditiis libero ratione.
+            Nobis ea ullam consequuntur quam nostrum incidunt reprehenderit dolores esse?
+            Est officia asperiores voluptatum ipsam sequi fugiat modi perferendis esse.
+            Provident nesciunt soluta, hic excepturi molestiae eligendi. Inventore, distinctio dignissimos.
+            Natus quae, earum modi eligendi animi corrupti beatae qui nostrum.
+        </p>
+    </div>
+    
+</body>
+
+</html>
