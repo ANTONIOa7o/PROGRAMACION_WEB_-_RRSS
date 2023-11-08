@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia</title>
+    <!--
+        Fuentes a las cuales hemos adquiridos las imagenes de esta pagina
+        https://www.flaticon.es/icono-gratis/boton-de-play_375
+        
+    -->
 </head>
+
 <body>
     <!--
         Etiquetas  
@@ -27,11 +34,55 @@
         POR DEFECTO EN ACORDE AL UX, experiencia de Usuario, Una ejecucion directa del mute, 
         tanto en atributo como en carga
     -->
-    <div style="text-align: center;margin: 0 auto;">
-            <video src=""></video>
-            <iframe src="" frameborder="0"></iframe>
-            <embed src="" type="">
+    <div style="text-align:center; margin:0 auto;">
+        <h3>Video y presentacion</h3>
+
+        <!--       
+                Video inicial NO RECOMEDANDO ↓
+            -->
+        <video poster="../images/boton-de-play.png" width="25%"" height=" 23%" autoplay="true" controls="true"
+            frameborder="1">
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </video><br>
+
+        <!--
+                Video Actual RECOMENDADO  ↓ 
+            -->
+
+        <video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" width="33%" autoplay="true" controls="true"
+            frameborder="1" muted="true">
+        </video><br>
+
+        <!--
+            Video incrustado de RRSS
+        -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IiSjPcRWjYA?si=DYSqieKKDS-crshr"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-pictur web-share" allowfullscreen>
+        </iframe><br>
+
+        <iframe style="width:600;height:350px;" frameborder="0" type="text/html"
+            src="https://www.dailymotion.com/embed/video/xdsdo?autoplay=1" width="600" height="300" allowfullscreen
+            title="Dailymotion Video Player" allow="autoplay">
+        </iframe><br>
+
+
+        <!--Inyectamos elementos como objetos
+            Definido por su sintaxis:
+            <object></object>
+            el src, como atributo, aqui es sustituido por data
+            asi  mismo podremos acceder a otros atributos desde style
+        -->
+
+        <object data="../data/Teoria HTML_&_CSS+3.docx.pdf" type="" width="675" height="790">
+        </object><br>
+<!--Conexiones a OneDrive-->
+        <iframe src="https://onedrive.live.com/embed?resid=52F34AF4D703EC40%211290687&authkey=!AGJ1uHXohgKfzp0&em=2"
+            width="790" height="300" frameborder="0" scrolling="no">
+        </iframe>
+
 
     </div>
 </body>
+
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+
+<body>
+    <!--
+        -------------LAS TABLAS------------
+        Las tablas en la configuracion de html, serán un lugar perfecto
+        para comprender el mapeo de una pagina web.
+        - Definida por su sintaxis:
+            Etiqueta:
+            5 etiquetas contenedoras que definen la tabla
+            <table>     Cuerpo de la tabla
+            <th>        Cabecera de la tabla
+            <tr>        etiqueta de fila
+            <td>        Etiqueta de los datos(columnas)
+            <caption>   Etiqueta titulo o leyenda
+
+    -->
+    <div style="text-align: center;margin: 0 auto;">
+        <h3>
+            Ejemplo 1: <b>Tablas Simples</b>
+        </h3>
+        <table style="background-color:gainsboro ;text-align:center;margin:0 auto;">
+            <caption><strong>Numeracion del 1 al 12</strong></caption>
+            <tr style="background-color: skyblue;">
+                <td>UNO</td>
+                <td>DOS</td>
+                <td>TRES</td>
+                <td>CUATRO</td>
+            </tr>
+            <tr style="color: red;">
+                <td>CINCO</td>
+                <td>SEIS</td>
+                <td>SIETE</td>
+                <td>OCHO</td>
+            </tr>
+            <tr>
+                <td>NUEVE</td>
+                <td>DIEZ</td>
+                <td>ONCE</td>
+                <td>DOCE</td>
+            </tr>
+
+        </table>
+        <!--
+
+    Combinacion de Celdas
+    Dos atributos importantes
+    a) colspan- Un valor con nº de espacios a combinar en la columna
+    b) rowspan- Un valor con el nº de espacios a combinar con la fila
+-->
+        <h3>Ejemplo 2: Tabla con Celdas COMBINADAS</h3>
+        <table border="2" style="background-color:gainsboro ;text-align:center;margin:0 auto;">
+            <caption><strong>Numeracion del DATO 1 al DATO 12</strong></caption>
+            <tr>
+                <th>COLUMNA 1</th>
+                <th>COLUMNA 2</th>
+                <th>COLUMNA 3</th>
+                <th>COLUMNA 4</th>
+            </tr>
+            <tr>
+                <td colspan="2">DATO 1</td>
+                <!-- <td>DATO 2</td> -->
+                <td>DATO 3</td>
+                <td rowspan="2">
+                <div>
+                    DATO 4
+                </div>    
+                </td>
+            </tr>
+            <tr>
+                <td>DATO 5</td>
+                <td>DATO 6</td>
+                <td>DATO 7</td>
+               <!--  <td>DATO 8</td> -->
+            </tr>
+            <tr>
+                <td>DATO 9</td>
+                <td>DATO 10</td>
+                <td>DATO 11</td>
+                <td>DATO 12</td>
+            </tr>
+            <tr>
+                <td>DATO 13</td>
+                <td>DATO 14</td>
+                <td>DATO 15</td>
+                <td>DATO 16</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
