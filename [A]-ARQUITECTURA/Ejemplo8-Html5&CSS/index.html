@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,34 @@
                             🎯 LAS INYECCIONES
             Todas las llamadas a: las cargas, enlaces o  inyecciones que carguen en la pagina
              principal (index.html) será aqui su lugar natural.
-             lugar de inyeccion de css, favicon, frameworks,.... 
+             lugar de inyeccion de css, favicon, js, frameworks,.... 
             => Definido por la siguiente sintaxis:
             <link rel="stylesheet" href="ruta_hojaEstilo" /> 
             Asociado a rutas locales cuando estas hojas de estilo son nativas(propias)
                                         ⇓                   
     -->
-      <link rel="stylesheet" href="css/styles.css"/> 
-      <!--
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/stylelistas.css">
+    <!--
                              link del favicon <=16px
                                      ⇊
-      -->    
-      <link rel="shortcut icon" href="images/brujula.png" type="image/x-icon">
-              
+      -->
+    <link rel="shortcut icon" href="images/brujula.png" type="image/x-icon">
+
 </head>
+
 <body>
-    <div >
-        <h1>Inyecciones de CCS</h1>
+    <div>
+        <div class="colocacionLink">
+            <a href="listas.html">
+                <img src="images/filesystems_thefolder_641.png" alt="">
+                <h3>Ir a LISTAS >></h3>
+            </a>
+        </div>
+        <h1>Inyecciones de CCS</h1><!--Endogamia -->
+
+
+
         <h2>Estructura de Encabezados</h2>
         <h3>Textos Normales 32px</h3>
         <h4>Texto Normal en 16px</h4>
@@ -32,16 +44,17 @@
         <h6>Textos muy pequeños</h6>
         <h2>Estructuras a Parrafos</h2>
         <p id="p1">PARRAFO 1</p>
+
         <p class="colorParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, porro!
-        Omnis neque expedita iste necessitatibus corrupti natus sed eos eveniet!
-        Laudantium possimus consequatur cumque tenetur dolorem numquam, perspiciatis deserunt? Deserunt.
-        Et assumenda amet necessitatibus maiores, quaerat nesciunt! Voluptatem, cum in?
-        Ducimus nulla a deleniti nobis. Sunt repudiandae minus aperiam ea!
-        Maiores veniam harum facere tempore debitis unde officia eos odio?
-        Eos fugiat deserunt sit reiciendis, quod eaque aperiam velit quisquam!
-        Vero vel soluta dolor omnis totam beatae molestiae expedita doloribus.
-        Quia sequi assumenda deleniti quo dolore quaerat optio recusandae iste?
-        Recusandae ducimus temporibus iusto dignissimos pariatur sunt. Incidunt, veniam amet.</p>
+            Omnis neque expedita iste necessitatibus corrupti natus sed eos eveniet!
+            Laudantium possimus consequatur cumque tenetur dolorem numquam, perspiciatis deserunt? Deserunt.
+            Et assumenda amet necessitatibus maiores, quaerat nesciunt! Voluptatem, cum in?
+            Ducimus nulla a deleniti nobis. Sunt repudiandae minus aperiam ea!
+            Maiores veniam harum facere tempore debitis unde officia eos odio?
+            Eos fugiat deserunt sit reiciendis, quod eaque aperiam velit quisquam!
+            Vero vel soluta dolor omnis totam beatae molestiae expedita doloribus.
+            Quia sequi assumenda deleniti quo dolore quaerat optio recusandae iste?
+            Recusandae ducimus temporibus iusto dignissimos pariatur sunt. Incidunt, veniam amet.</p>
         <p class="amarillo">PARRAFO 2</p>
         <p class="colorParrafo">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, harum.
@@ -55,7 +68,33 @@
             Velit dicta adipisci eveniet rem eum aut sint iure cupiditate.
             Deserunt consequatur fuga aliquam neque unde debitis dolor molestiae temporibus.
         </p>
+        <hr>
         <h2>Estructuras a Tablas</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>edad</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Lopez</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Macias</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Castejon</td>
+                <td>47</td>
+            </tr>
+        </table>
+        <hr>
+
     </div>
 </body>
+
 </html>

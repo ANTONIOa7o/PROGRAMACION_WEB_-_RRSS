@@ -1,0 +1,15 @@
+body{
+    background-color: #ece5da;
+}
+h2{
+    background-color: rgb(209, 200, 206);
+    color: #ece5da;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+table{
+    margin: 0 auto;
+    text-align: center;
+}

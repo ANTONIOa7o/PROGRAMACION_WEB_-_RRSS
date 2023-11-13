@@ -22,7 +22,6 @@ Comentarios
 div {
     text-align: center;
     margin: 0 auto;
-
 }
 
 /*
@@ -35,10 +34,7 @@ etiqueta1,etiqueta2,.....etiqueta n{
 */
 
 h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
     color: slategray;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -63,12 +59,12 @@ atributo:Valor
 }
                          ↓
 */
-.colorParrafo{
+.colorParrafo {
     color: green;
     font-weight: bold;
     text-align: justify;
-
 }
+
 /*
 4º Conexion directa o agujero de gusano, denominado idetinficador en referencia al Doctype
 definido por id="" & refereciado en la hoja de estilo con una hastag #
@@ -77,11 +73,13 @@ Sintaxis:
     atributo:Valor
 }                        ↓
 */
-p{
+#p1 {
     background-color: blanchedalmond;
     font-size: large;
     font-style: italic;
+    color: rebeccapurple;
 }
+
 /*
 5º Condiciones Sencillas, entendidas como asociaciones de elemento o etiquetas
 Sintaxis:
@@ -89,10 +87,37 @@ etiqueta.nombreReferencia{
     Atributo:Valor
 }                       ↓
 */
-p.amarillo{/*busca alli donde haya una etiqueta de <p> 
+p.amarillo {
+    /*busca alli donde haya una etiqueta de <p> 
     y si tiene la clase amarillo entonces ejecuta
     el estilo */
     color: yellow;
     font-weight: bold;
     font-size: xx-large;
+}
+
+/*
+Configuracion de tabla
+*/
+
+table,
+th,
+td {
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid skyblue;
+   /*  border-style: dotted; */
+    /*
+    Css3, el border, llamando a 3 atributos seguidos por  un espacio
+    border: tamaño del borde
+     border-style: solid, dotted.....
+    border-color:  skyblue
+       */
+    border-collapse: collapse;
+    /*
+    border-collapse, digamos que colapasa las dobles lineas de la tabla
+    */
+}
+hr{
+    width: 50%;
 }

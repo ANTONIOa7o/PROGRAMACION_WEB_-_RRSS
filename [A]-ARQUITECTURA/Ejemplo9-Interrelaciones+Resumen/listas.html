@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Ordenadas, No ordenadas y Desplegables</title>
+</head>
+
+<body>
+    <!--
+
+-------------------LAS LISTAS---------------------
+A. Listas Ordenadas
+       - Presenta los elementos de manera ordenada.(Alfanumerica)
+       - Sintaxis:
+        <ol>
+            <li></li>
+        </ol>
+       - Atributos:
+        type:
+            los valores serán:  
+            ->"1"
+            ->"a"
+            ->"A"
+            ->"I"
+    -->
+    <div>
+        <h2>EJEMPLOS DE TIPOS DE LISTAS</h2>
+        <h3>Listas Ordenadas</h3>
+        <h4>Ejemplo 1: Tabla sencilla</h4>
+        <ol type="a">
+            <li>Magdalena
+                <ol type="I">
+                    <li>Mateo</li>
+                    <li>Jose Luis</li>
+                </ol>
+            </li>
+            <li>Antonio</li>
+            <li>Fran</li>
+            <li>Dani</li>
+            <li>Leo</li>
+        </ol>
+        <hr style="width: 80%;">
+
+        <h4>Ejemplo 2: listas anidadas</h4>
+
+        <ol>
+            <li>PADRE</li>
+            <ol>
+                <li>Hijo</li>
+                <ol>
+                    <li>Niejo</li>
+                </ol>
+            </ol>
+
+        </ol>
+
+        <ol>
+            <li>PADRE
+                <ol>
+                    <li>Hijo
+                        <ol>
+                            <li>Nieto</li>
+                        </ol>
+                    </li>
+                    <li>Hijo 2
+                        <ol>
+                            <li>Nieto 1</li>
+                            <li>Nieto 2
+                                <ol>
+                                    <li>Bisnieto</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <hr style="width: 80%; background-color:rgb(106, 101, 101);">
+        <h3>Irrupcion y Continuacion de Listas</h3>
+        <ol type="a">
+            <li>ELEMENTO 1</li>
+            <li>ELEMENTO 2</li>
+            <li>ELEMENTO 3</li>
+
+        </ol>
+        <h4>Explicaciones del Elemento 3</h4>
+        <p>Lorem ipsum dolor sit.
+            Reiciendis libero ducimus nostrum?
+            Maiores recusandae nisi fugit.
+            Officiis beatae consectetur provident!</p>
+        <!--
+La continuacion de una irrupcion en una lista, la abordaremos por el 
+atributo start=""
+-->
+        <ol type="a" start="4">
+            <li><b>ELEMENTO 4</b></li>
+        </ol>
+
+        <!--
+    B. Lista No ordenadas
+    - Serán listas no numeradas
+    - Sintaxis:
+        <ul>
+            <li></li>
+        </ul>
+    - Atributos: typte
+        disk, square, circle
+        
+-->
+        <hr style="width: 80%; background-color: aqua; height: 4px;  border-color: brown;">
+        <h3>Listas no Ordenadas</h3>
+        <h4>Ejemplo 1: Lista Clásica</h4>
+        <ul>
+
+            <li>Leche</li>
+            <li>Mantequilla</li>
+            <li>Macarrones</li>
+            <li>Atun</li>
+            <li>Gulas</li>
+        </ul>
+        <h4>Ejemplo 2: Sin listar</h4>
+        <div style="text-align: center;">
+            <ul style="list-style: none;">
+                <li> <a href="https://github.com/ANTONIOa7o"> 🎯Mi Repositorio</a></li>
+                <li> <a href="#">🎯Botón 2</a></li>
+                <li> <a href="#">Botón 3 >></a></li>
+            </ul>
+        </div>
+        <div style="text-align: left;">
+            <h3>Listas de Glosarios</h3>
+            <!--
+                Listas de Glosarios
+                - Definicion de Conceptos, bibliografia, glosarios
+                - Sintaxis:
+                - <dl>
+                    <dt>titulo del dato</dt>
+                    <dd>Definicion</dd>
+                  </dl>
+           -->
+           <h4>Lista de definicion En desarrollo Web</h4>
+           <dl>
+            <dt>HTML5</dt>
+            <dd>Metalenguaje de marcas para la elaboracion de elementos dentro del DocType</dd>
+            <dt>CSS</dt> 
+            <dd>Lenguaje asociado a Html5, para la generacion de estilos en cascada de manera independiente</dd>
+            <dt>JavaScript</dt>
+            <dd>Lenguaje Guión, de ejecuciones en el entorno Cliente</dd>
+           </dl>
+        </div>
+        <!--
+            C.LISTAS DESPLEGABLES
+            - Caracteristica principal de etiqueta de apertura y cierre visuales
+            Donde se generea de manera interna menús desplegables de accesibilidad
+            al usuario. Indirectamente ya contribuyen a acceder a  datos, recopilar, apuntar...
+            - Sintaxis:
+            a)  <select>
+                <option></opticon>
+                </select>
+            b) <select>
+                  <optgroup>
+                      <option></opticon>
+                  </optgroup>
+               </select>
+
+        -->
+        <div style="text-align: center;">
+            <h3>Listas Desplegable</h3>
+            <h4>Ejemplo 1: Sencilla</h4>
+            <select name="" id="">
+                <option value="0">----Selecciona Lenguaje-----</option>
+                <option value="1">javasScript</option>
+                <option value="2">Php</option>
+                <option value="3">JAVA</option>
+            </select><br>
+            <h3>Ejemplo 2: optgruop</h3>
+            <select name="" id="">
+                <optgroup label="1º Curso" >
+                    <option value="">JavaScript</option>
+                    <option value="">Php</option>
+                    <option value="">JAVA</option>
+                </optgroup>
+                <optgroup label="2º Curso">
+                    <option value="Python">Python</option>
+                    <option value="">C++</option>
+                    <option value="">Kotlin</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
