@@ -1,0 +1,98 @@
+/*
+Comentarios
+*/
+/*
+    📣-----------CSS--------------
+
+    Es definido como un lenguaje de estilos caracterizados por su extension .css
+    (Cascading Style Sheet). Una finalidad necesaria para definir las presentaciones del 
+    doctype hacia una diversidad de interacciones de los estilos visuales
+    -Definido por su sintaxis:
+    .#elemento-Html{
+        atributo:Valor
+    }
+
+    1º Estilos de referencia directa a una etiqueta 
+    Sintaxis;
+    etiqueta{
+        atributo:valor
+    }
+                       ↓
+*/
+div {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/*
+2º Estilos de referencia directa sumativa +, con la grafia coma(,)
+Sintaxis;
+etiqueta1,etiqueta2,.....etiqueta n{
+    atributos:Valor
+}
+                                ↓
+*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: slategray;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    /*
+    Resumen de un atributo
+    ejemplo border
+    border-size
+    border-style
+    border-color
+    */
+    /* border: 1px solid black; */
+}
+
+/*
+3º Conexiones standard con la aplicacion de los atributos, denominados clase
+referenciados en el doctype llamado class & referenciado en la hoja de estilos con un punto(.)
+llamado selector
+Sintaxis:
+.nomabreReferencia{
+atributo:Valor
+}
+                         ↓
+*/
+.colorParrafo{
+    color: green;
+    font-weight: bold;
+    text-align: justify;
+
+}
+/*
+4º Conexion directa o agujero de gusano, denominado idetinficador en referencia al Doctype
+definido por id="" & refereciado en la hoja de estilo con una hastag #
+Sintaxis:
+#nombreReferencia{
+    atributo:Valor
+}                        ↓
+*/
+p{
+    background-color: blanchedalmond;
+    font-size: large;
+    font-style: italic;
+}
+/*
+5º Condiciones Sencillas, entendidas como asociaciones de elemento o etiquetas
+Sintaxis:
+etiqueta.nombreReferencia{
+    Atributo:Valor
+}                       ↓
+*/
+p.amarillo{/*busca alli donde haya una etiqueta de <p> 
+    y si tiene la clase amarillo entonces ejecuta
+    el estilo */
+    color: yellow;
+    font-weight: bold;
+    font-size: xx-large;
+}
