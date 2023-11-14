@@ -1,7 +1,8 @@
-body{
+body {
     background-color: #ece5da;
 }
-h2{
+
+h2 {
     background-color: rgb(209, 200, 206);
     color: #ece5da;
     text-align: center;
@@ -9,7 +10,56 @@ h2{
     font-weight: bold;
     font-size: xx-large;
 }
-table{
-    margin: 0 auto;
+
+/*
+En correcciones o ajustes de posicion con respecto a un elemento o/y al Doctype
+para ello recurriremos a dos Atributos
+
+    =>margin: Viene definido por los ejes, en el moviento del reloj, de izq a drch.
+    tendrá 4 atributos asociados, left, right, top y botton
+margin-left: ;
+margin-top:  valor px/rem/em ;
+margin-right: ;
+margin-botton: ;
+
+    =>padding: Viene igualmente definido por ejes, en el moviento del reloj, de izq a drch.
+    tendrá tambien 4 atributos asociados, left, right, top y botton
+padding-left:;
+padding-top:;
+paddin-right:;
+padding-botton:;
+    Se diferencia del margin en que dicho margen es con respecto no al Doctype, sino 
+    al elemento en el que se encuentra
+
+
+*/
+table {
+    margin: 32px auto;
+    /*  margin-top: 300px;  Ojo a los elementos que se  complementan o contradictorios*/
+
     text-align: center;
+}
+
+.ajusteImagen {
+    width: 32px;
+}
+
+td {
+    padding: 16px;
+}
+
+div a img {
+    width: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 8px;
 }
