@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-Nuevos selectores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--
+                -----FORMULARIOS-----
+Un conjunto de elementos que en su interrelacion, permite al usuario 
+introducir un conjunto de datos asociado a una coleccion de datos
+Sintaxis:
+a.General
+<form></form>
+
+b.Agrupacion de contenidos
+        1.<fieldset></fieldset>
+        2.<legend> 
+        3.<label>
+
+c.Introduccion de Datos (Atributos)
+    i. Texto/Caracteres (input)
+            type (Naturaleza del texto, numero, pasword, fechas, color)
+            name (Dar nombre de llamada al elemento que estará asociado a una variable)
+            size (tamaño del campo)
+            value (Que valor va a tener ese elemento)
+            disable (un elemento lo true o false)
+            placeholder (Accesibilidad un ejemplo dentro del elemento)
+
+    ii.Menus
+            <select>
+                <optgroup></optgroup>
+                <option></option>
+            </select>
+            <datalist>
+                <option></option>
+            </datalist>
+
+    iii.Envio de Datos
+            <input/>
+            <button></button>  
+    -->
+    <div>
+        <h2>Formulario y Selectores</h2>
+        <form action="" method="">
+            <!-- lo que diferencia el formulario html5 del web, será su propia ejecucioon -->
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <label for="">Nombre</label>
+                <input type="text" name="nombre">
+                <label for="">Apellidos</label>
+                <input type="text" name="Apellidos">
+                <label for="">Edad</label>
+                <input type="number" name="nombre" min="18" style="width: 48px;;">
+                <label for="">Sexo</label>
+                <input type="checkbox"/>Hombre
+                <input type="checkbox"/>Mujer
+                <input type="checkbox"/>Fluido
+                <label for="">Fecha de Nacimiento</label>
+                <input type="date" name="fechaN">
+            </fieldset>
+            <fieldset>
+                <legend>Reserva:</legend>
+                <label for="">Escoge Aventura</label>
+                <select name="experiencia" id="">
+                    <option value="0">---Elegi Aventura------</option>
+                    <option value="1">Descensos Rapidos (150€ por persona)</option>
+                    <option value="2">Viaje en Velero (135€ por persona)</option>
+                    <option value="3">3 Clases de surf (90€ por persona)</option>
+                    <option value="4">Paseo a Caballo por la playa (35€ por persona)</option>
+                </select>
+                <label for="">Fecha de reserva</label>
+                <input type="datetime-local">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="">e-mail</label>
+                <input type="email" name="email">
+                <input type="radio" name="" id="">Acepta las condiciones
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
