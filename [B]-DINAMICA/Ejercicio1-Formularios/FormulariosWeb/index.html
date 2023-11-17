@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios-Nuevos selectores</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <!--
-                -----FORMULARIOS-----
-Un conjunto de elementos que en su interrelacion, permite al usuario 
-introducir un conjunto de datos asociado a una coleccion de datos
-Sintaxis:
-a.General
-<form></form>
+          ------------  CONFIGURACIONES DEL CUERPO DEL FORMULARIO -------------
+        Los encontramos dentro de la etiqueta <form> en los siguiente atributos:
+            a.action=""
+                Lugar hacia donde irán los datos
+            b.method=""
+                Como se van a enviar dichos datos, utilizaremos dos valores
+                1.get: Los datos se envian a través de la url separados por ? y 
+                concatenados por &
+                    Usos  principales:
+                        ->Pocos datos y se ajusten a derecho
+                        ->Informacion no confidencial ni sensible
+                        ->Peticiones Idempotentes(No hay cambios en el sevidor)
+                2.post: enviado en el cuerpo de la  peticion
+                    Usos  principales:
+                        ->Gran cantidad de datos,  no hay establecimiento de limite
+                        ->Informacion Cofidencial
+                        ->Peticiones No Idempotentes(Cambios en el servidor, Creas datos
+                        Actualizas datos, Visualizas datos, o borras datos) CRUD
 
-b.Agrupacion de contenidos
-        1.<fieldset></fieldset>
-        2.<legend> 
-        3.<label>
 
-c.Introduccion de Datos (Atributos)
-    i. Texto/Caracteres (input)
-            type (Naturaleza del texto, numero, pasword, fechas, color)
-            name (Dar nombre de llamada al elemento que estará asociado a una variable)
-            size (tamaño del campo)
-            value (Que valor va a tener ese elemento)
-            disable (un elemento lo true o false)
-            placeholder (Accesibilidad un ejemplo dentro del elemento)
-
-    ii.Menus
-            <select>
-                <optgroup></optgroup>
-                <option></option>
-            </select>
-            <datalist>
-                <option></option>
-            </datalist>
-
-    iii.Envio de Datos
-            <input/>
-            el atributo type para el envio de datos submit
-            <button></button>  
     -->
     <div>
         <h2 class="centrado">Formulario y Selectores</h2>
-        <form action="" method="">
+        <form action="" method="get">
             <!-- lo que diferencia el formulario html5 del web, será su propia ejecucioon -->
             <fieldset>
                 <legend>DATOS PERSONALES</legend>
@@ -111,5 +95,4 @@ c.Introduccion de Datos (Atributos)
      
     </div>
 </body>
-
 </html>
