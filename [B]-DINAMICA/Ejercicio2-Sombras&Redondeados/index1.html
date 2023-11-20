@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras:Elementos y Textos</title>
+</head>
+
+<body>
+    <!-- Ambio de html -->
+
+
+    <script>
+
+    </script>
+    <style>
+        /* En el ambito de css, entre la etiqueta contenedora style */
+        div {
+          /*   background-color: blanchedalmond; */
+            padding: 32px;
+            margin: 36px;
+            border-radius: 8px;
+
+        }
+
+        #sombraCuadro {
+            /* 
+            Sombra de elemento, definido por  su sintaxis:
+            atributo: box-shadow
+            valores: x y z color
+            */
+            box-shadow: 10px 10px 10px rgb(220, 220, 220),
+                20px 20px 10px rgb(225, 221, 222),
+                30px 30px 10px rgb(246, 244, 244);
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 36px;
+            text-shadow: 1px 1px 2px black,
+                0.16px 0.16px 0.16px #bbb,
+                0.16px 0.16px 1.32px #ddd;
+        }
+
+        .sombra2 {
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 36px;
+            text-shadow: 1px 1px 2px black,
+                0.16px 0.16px 0.16px #bbb,
+                0.16px 0.16px 1.32px #ddd;
+            color: white;
+        }
+    </style>
+
+    <div id="sombraCuadro">
+        <h2>Ejemplo Sombra Cuadro</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, voluptatum.
+            Nostrum, nulla adipisci quos veniam nesciunt fuga ab accusamus inventore.
+            Numquam, et libero. Perspiciatis reiciendis dolore culpa, dignissimos qui tempora?
+            Est architecto quo voluptatibus rerum consequuntur dicta? Voluptates, consequuntur vero?
+            Excepturi ad officiis accusamus dolores consequatur repudiandae repellat dignissimos nam.
+            Quod veritatis asperiores repellat enim similique temporibus, nostrum alias amet?
+            Delectus quibusdam accusamus, maiores id odio totam quis quam dicta.
+            Perferendis nam odio qui asperiores ab maiores amet voluptatem obcaecati!
+            Itaque nisi velit, repudiandae laudantium obcaecati asperiores tempore rerum fuga.
+            Nulla exercitationem obcaecati sequi expedita quia, impedit maiores delectus possimus!
+        </p>
+    </div>
+    <div id="sombraCuadro">
+        <h2>Ejemplo Sombra Texto</h2>
+        <p class="sombra2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, voluptatum.
+            Nostrum, nulla adipisci quos veniam nesciunt fuga ab accusamus inventore.
+            Numquam, et libero. Perspiciatis reiciendis dolore culpa, dignissimos qui tempora?
+            Est architecto quo voluptatibus rerum consequuntur dicta? Voluptates, consequuntur vero?
+            Excepturi ad officiis accusamus dolores consequatur repudiandae repellat dignissimos nam.
+            Quod veritatis asperiores repellat enim similique temporibus, nostrum alias amet?
+            Delectus quibusdam accusamus, maiores id odio totam quis quam dicta.
+            Perferendis nam odio qui asperiores ab maiores amet voluptatem obcaecati!
+            Itaque nisi velit, repudiandae laudantium obcaecati asperiores tempore rerum fuga.
+            Nulla exercitationem obcaecati sequi expedita quia, impedit maiores delectus possimus!
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -6,9 +6,12 @@
 form,
 fieldset {
     width: 400px;
-    margin: 0 auto;
+   /*  
+   Al centrar el documento el auto no deja flotar  el iframe
+   margin: 0 auto; */
     padding-left: 10px;
-    /*    margin-left: 32px;  revisar como ejecuta en cascada de centrado a una nueva orden*/
+    /*margin-left: 32px;  revisar como ejecuta en cascada de centrado a una nueva orden*/
+    float: left;
 }
 
 label {
@@ -49,6 +52,7 @@ input:hover {
 .centrado{
     text-align: center;
     margin: 0 auto;
+    margin: 16px;
 }
 
 /* En  los link, cambio visual si ya se ha seleccionado
@@ -81,4 +85,26 @@ input[type=checkbox]:checked+label {
     font-weight: bold;
     color: blue;
 
+}
+iframe
+{
+    width: 400px;
+    height: 580px;
+    float: right;
+}
+a{
+    /* posicion de la etiqueta a */
+    text-align: center;
+   /*  margin: 160px; */
+   padding: 10px;
+   margin-left: 128px;
+   /* La percepción de boton, CTA */
+   text-decoration: none;
+   border: 1px solid brown;
+   color: brown;
+   border-radius: 16px;
+}
+a:hover{
+    color: red;
+    font-weight: bold;
 }
