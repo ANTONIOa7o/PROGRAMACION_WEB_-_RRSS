@@ -1,0 +1,41 @@
+/* -----------LAS ROTACIONES-------------
+
+    Generan y definen un movimiento estatico, partiendo del elemento inicial
+    con respecto a un cambio de su ejes de coordenadas.
+    Sintaxis:
+        transform atributo de las transiciones
+        y los valores defidos en este caso como rotate(grados)-degree
+*/
+
+/* IMPORTANTE:
+    Vamos a dar caracteristicas al elemento inicial de arquitectura
+*/
+/* 1º definimos el elemento */
+div{
+    float: left;
+    width: 10em;
+    height:10em ;
+    background-color: skyblue;
+    border: 16px solid skyblue;
+    border-radius:1em ;
+    box-shadow: 1em 1em 1em skyblue;
+    margin: 6em;
+    padding: 2em;
+    /* 2º Definimos el movimiento estatico y su tiempo */
+    transition: transform 1.5s;
+}
+/* 3ª definimos el movimiento */
+#cuadrado1:hover{
+    transform: rotate(30deg);
+}
+#cuadrado2:hover{
+    transform: rotate(-30deg);
+}
+/* Definimos en el 3d eje x , y, z y grados */
+#cuadrado3:hover{
+    transform:rotate3d(1,1,1,120deg);
+}
+#cuadrado4:hover{
+    transform:rotateX(100deg);
+}
+
