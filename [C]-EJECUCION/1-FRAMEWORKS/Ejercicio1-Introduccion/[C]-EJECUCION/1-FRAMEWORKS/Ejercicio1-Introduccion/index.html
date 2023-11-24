@@ -206,42 +206,283 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <!-- 1º imagen -->
             <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/367/267?random=2" class="card-img-top img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Imagen Bordeada</h5>
-                  <p class="card-text">Utilizando la clase definida por bootstrap de .img-thumbnail</p>
+                <div class="card">
+                    <img src="https://picsum.photos/3670/2670?random=2" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Imagen Bordeada</h5>
+                        <p class="card-text">Utilizando la clase definida por bootstrap de .img-thumbnail</p>
+                    </div>
                 </div>
-              </div>
             </div>
+            <!-- 2º imagen -->
             <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/id/6/3670/2670" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card">
+                    <img src="https://picsum.photos/id/6/3670/2670" class="card-img-top rounded-pill" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Imagen Pildora</h5>
+                        <p class="card-text">Utiliza la clase .rounded-pill redondea la imagen con formato pildora</p>
+                    </div>
                 </div>
-              </div>
             </div>
+            <!--  3º imagen -->
             <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/id/71/3670/2670" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <div class="card" style="background-color: lightgray;">
+                    <img src="https://picsum.photos/id/71/3670/2670" class="card-img-top rounded-lg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Imagen bordeada</h5>
+                        <p class="card-text">Utiliza la clase .rounded-lg</p>
+                    </div>
                 </div>
-              </div>
             </div>
+            <!-- 4º imagen -->
             <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/id/95/3670/2670" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card">
+                    <img src="https://picsum.photos/id/95/3670/3670" class="card-img-top rounded-circle"
+                        style="width: 70%; margin:8px auto;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Imagenes Totalmente redondeadas</h5>
+                        <p class="card-text">Utiliza la clase .rounded-circle, lograr el mayor redondeo de
+                            la imagen. Las proporciones de altura y anchura,iran en proporcion
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+        <hr>
+        <h2 class="display-6" style="text-align: center;">BOTONES(CTA)</h2>
+        <div class="text-center" style="padding:18px;">
+            <button type="button" class="btn btn-primary" style="margin: 36px;">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <!-- Botones con un :hover, percepcion de cambio de estado, ojo su riesgo en multiplataforma -->
+            <button type="button" class="btn btn-outline-light">ESCONDIDO</button>
+            <button type="button" class="btn btn-outline-dark">Fuera de Linea</button>
+
+            <button type="button" class="btn btn-link" style="font-weight: bold;">Link</button>
+            <!-- modificado, perderá alugna cararcteristica -->
+            <button type="button" class="btn btn-danger"
+                style="background-color: orange; color: aliceblue;">Modificado</button>
+        </div>
+        <h3>Botones desplegables</h3>
+        <div class="dropdown text-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Boton Desplegable
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Elemento 1</a></li>
+                <li><a class="dropdown-item" href="#">Elemento 2</a></li>
+                <li><a class="dropdown-item" href="#">Elemento 3</a></li>
+            </ul>
+        </div>
+        <h3>Botones control de colapso </h3>
+        <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Accede>> a tu Codido Dto
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse" id="collapseWidthExample">
+                <div class="card card-body" style="width:300px; text-align: center; margin: 0 auto;">
+                    <code>2342</code>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="display-6" style="text-align: center;">BARRAS DE NAVEGACION(navbar o nav)</h2>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- El lugar de las imagenes -->
+                <a class="navbar-brand" href="https://getbootstrap.com/"> logo/<img src="" alt="">
+                    <!-- Inyectamos el  conjunto de vectorers que define la imagen -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="violet"
+                        class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                        <path
+                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Quines Somos</a>
+                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+                <button class="btn  btn-secondary">Accede >>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <hr>
+        <h2 class="display-6" style="text-align: center;">FORMULARIOS CON VALIDACION</h2>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Introduce nombre"
+                    required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Introduce apellidos"
+                    required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Correo electronico</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="email" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationDefault04" class="form-label">Comunidad Autonoma</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>Castilla & León</option>
+                    <option>Comunidad de Madrid</option>
+                </select>
+            </div>
+            <div class="col-md-5">
+                <label for="validationDefault04" class="form-label">Ciudad</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>MADRID</option>
+                    <option>BURGOS</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+        <hr>
+        <h2 class="display-6" style="text-align: center;">MODAL: Llamadas emergentes</h2>
+
+        <!-- Boton de ejecucion-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Guardar
+        </button>
+
+        <!-- Ventana Emergente  CTA -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">GUARDAR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Guardar Cambios ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn-success">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="display-6" style="text-align: center;">OFFCANVAS: Llamadas emergentes con Contenido</h2>
+
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            Ir a Formularios >>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Formulario</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <!--      Lugar idoneo para inyectar informacion al canvas, formularios, listas,navbar, navegadores..., imagenes -->
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01"
+                                placeholder="Introduce nombre" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="validationDefault02"
+                                placeholder="Introduce apellidos" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Correo electronico</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="email" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="validationDefault04" class="form-label">Comunidad Autonoma</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elige...</option>
+                                <option>Castilla & León</option>
+                                <option>Comunidad de Madrid</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="validationDefault04" class="form-label">Ciudad</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elige...</option>
+                                <option>MADRID</option>
+                                <option>BURGOS</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Aceptar condiciones
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
     </div>
 
 </body>
