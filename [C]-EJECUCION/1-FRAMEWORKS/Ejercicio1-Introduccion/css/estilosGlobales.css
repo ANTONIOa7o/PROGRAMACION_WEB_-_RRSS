@@ -1,0 +1,26 @@
+
+
+
+/* Este es el estilo de las tres imagenes redondeadas que siguen al carrusell */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* visualizacion del hr */
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  /* Control de las imagenes */
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }

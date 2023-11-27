@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera Página de Desarrollo</title>
+    <!-- Libreria de Bootstrap conjunta de css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Libreria de Bootstrap conjunta de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilosGlobales.css">
+</head>
+
+<body>
+    <!-- Simbolos svg de la libreria de jumbotron-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+        </symbol>
+        <symbol id="check2-circle" viewBox="0 0 16 16">
+            <path
+                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+            <path
+                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+        </symbol>
+    </svg>
+    <!--JUMBOTROM: Traido de la libreria de bootstrap jumbotron -->
+    <div class="container my-5">
+        <!-- jumbotron -->
+        <div class="position-relative p-5 text-center text-muted bg-body ">
+
+            <svg class="bi mt-5 mb-3" width="48" height="48">
+                <use xlink:href="#check2-circle" />
+            </svg>
+            <h1 class="text-body-emphasis">Placeholder jumbotron</h1>
+            <p class="col-lg-6 mx-auto mb-4">
+                This faded back jumbotron is useful for placeholder content. It's also a great way to add a bit of
+                context to a page or section when no content is available and to encourage visitors to take a specific
+                action.
+            </p>
+            <button class="btn btn-primary px-5 mb-5" type="button">
+                Call to action >>
+            </button>
+        </div>
+        <!-- Barra de Navegacion -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Curso/Js</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accede al lengua Js</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Funciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Aplicaciones</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <!-- para otros iconos -->
+                        <a href="https://github.com/ANTONIOa7o/DESARROLLO_JavaScript_FrameWorks"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg></a>
+
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <!-- carrussell -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/3/800/400" class="d-block w-100" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Introduccion HTML5</h1>
+                            <p class="opacity-75">Some representative placeholder content for the first slide of the
+                                carousel.</p>
+                            <p><a class="btn btn-lg btn-secondary" href="#">Accede a nuestra Guia</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/60/800/400" class="d-block w-100" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Estilos Css Y Css3.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/48/800/400" class="d-block w-100" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Dinamica JavaScript</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Tres columnas de imagenes que siguen al carrusel 
+        Ojo debemos traernos las clase marketing de bootstraps, sino no funciona su
+    proporcionalidad -->
+        <div class="marketing">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                    <h2 class="fw-normal">JAVASCRIPT AVANZADA</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                        the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="images/angularMaterial.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                    <h2 class="fw-normal">FRAMEWORK ANGULAR</h2>
+                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                        second column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="images/kisspng-gear-machine-metal-industry-steel-metal-gear-5a7bd79188cee9.7179633115180655535604.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                    <h2 class="fw-normal">OTRAS LIBRERIAS</h2>
+                    <p>And lastly this, the third column of representative placeholder content.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+        <hr class="featurette-divider">
+        <!-- footer o cierre visual de pagina -->
+
+    </div>
+</body>
+
+</html>
