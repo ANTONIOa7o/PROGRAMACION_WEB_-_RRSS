@@ -34,6 +34,11 @@
             height: 60px;
             text-align: left;
         }
+        .pie2 {
+            background-color: lawngreen;
+            height: 60px;
+            text-align: right;
+        }
 
         .seccion {
             background-color: red;
@@ -41,6 +46,15 @@
             text-align: center;
             padding-top: 55px;
             font-size: 100px;
+        }
+        /* la directiva  !important será para dar relevancia a los atributos
+        referidos */
+        .border{
+            border-width: 10px !important;
+            border-color: white !important;
+        }
+        h2{
+            color: grey;
         }
     </style>
     <!-- Configuraciones Universales de los dispositivos
@@ -65,17 +79,23 @@
                     - xl >= 1175 px
 
         -->
+       
     <div class="container">
+        <h2>Reticula Dinámica Multiplataforma</h2>
         <div class="row">
-            <div class="col-sm-12 col-lg-12 col-xl-12 encabezado">Header</div>
+            <div class="col-sm-12 col-lg-12 col-md-12 encabezado border">
+
+                HEROS, JUMBOTRON, NAVBAR
+            </div>
         </div>
         <div class="row">
-            <div class="col seccion">1</div>
-            <div class="col seccion">2</div>
-            <div class="col seccion">3</div>
+            <div class="col-lg-4 col-md-12 col-sm-12  seccion border">1</div>
+            <div class="col-lg-4 col-md-6 col-sm-6 seccion border">2</div>
+            <div class="col-lg-4 col-md-6 col-sm-6 seccion border">3</div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-lg-12 col-xl-12 pie">footer A</div>
+            <div class="col-sm-12 col-lg-6 col-md-6 pie border">footer A</div>
+            <div class="col-sm-12 col-lg-6 col-md-6 pie2 border">footer A</div>
         </div>
 
     </div>
