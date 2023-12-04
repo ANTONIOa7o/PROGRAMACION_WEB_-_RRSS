@@ -42,13 +42,24 @@
                     continua construyecto el argumento numerico
 
             b)parseInt()
-                    - 
+                   -Convertirá el argumento string devolviendo un numero entero;
+                   es decir, si el primer caracter no puede convertir en numero,  Nan, y asociado
+                   a un null.
+                   -El funcionamiento de dicho metodo, es similar al float, pero inverso, al percibir
+                   el punto, lo abservará y no continuará la construccion del argumento numerico
+                    
 
         */
        /* a) */
        var real = parseFloat(dato);
        console.log(real +  'que  tipo de variable es: ' + typeof(real));
        console.log('dto creado a la variable: ' + real*0.1);
+
+       /* b) */
+       var entero =parseInt(dato);
+       console.log(entero);
+       console.log('Total a pagar: ' + ((entero) - (0.5)));
+
     </script>
 </body>
 </html>
