@@ -51,8 +51,41 @@ function funcionesMatematicas() {
     /* Como paso de numero a string?, hasta ahora, teniamos
     claro, que los datos que vienen desde la interfaz del usuario era string
     y podiamos con el metodo parse,  pasarlo a  nº, como pasaremos de numero a string */
-    'Cambio de tipo number a string: '  + numero.toString();
+    'Cambio de tipo number a string: '  + numero.toString();   
+}
+/* B] Construcciones desde la variable
+    Hemos comprobado que los metodos necesitan partir de un lugar o elemnto referenciado, se
+    comportará igualmente. 
+    Sintaxis:
+    variable.metodo()
+*/
 
+function funcionesTextos() {
+    var texto = 'JavaScript estructura de cadena texto';
+    document.getElementById('resultado').innerHTML =
+    'Minusculas: ' +texto.toLocaleLowerCase() + '<br>' +
+    'Mayusculas: ' + texto.toLocaleUpperCase() + '<br>' +
+    'Longitud de la cadena de texto: ' + texto.length + '<br>' +
+    /* Posicion del  caracter de la cadena de string */
+    'Localizacion del caracter e: ' + texto.indexOf('e')+ '<br>' +
+    /* Localizada   la  posicion, accedo a su valor unicode */
+    'valores Unicode: ' + texto.charCodeAt(texto.indexOf('e'));
+}
 
-    
+/* 
+C] Otro objeto de llamada a fechas y horas, cargadas igualmente en las librerias de
+javascript.  Aqui si llamamos al objeto y como tal  lo referenciaremos:
+Sintaxis:
+variable = new Date()
+Que se produce;  cada vez que llamamos a esta variable, se instancia automaticamente
+el objeto, accede a todos los metodos del dicho objeto (fecha())
+*/
+function funcionesFechas() {
+    var lola;
+   lola = new Date();
+    document.getElementById('resultado').innerHTML=
+    'Fecha: ' + lola.toLocaleDateString('es-eu',{weekday:'long',month:'short',day:'numeric'}) + '<br>' +
+    'Hora: ' + lola.toLocaleTimeString()+ '<br>' +
+    'Mes: ' + lola.getMonth()+ '<br>' +
+    'Dia: ' + lola.getDay()+ '<br>'; 
 }
