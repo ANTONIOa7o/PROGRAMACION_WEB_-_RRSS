@@ -19,47 +19,52 @@
 <body>
     <div class="container" style="text-align:center ; width:380px;padding: 8px;">
         <h3>Recogida de Datos: <code>Propiedad:.value</code></h3>
+        <!-- El miniFormulario -->
         <div>
             <label for="" class="form-label">Nombre:</label><!-- El concepto de dato para el usuario(La percepción) -->
-            <input type="text" class="form-control" id=""><!-- El valor del  dato que nos da el usuario (BB.DD) -->
+            <input type="text" class="form-control"
+                id="nombre"><!-- El valor del  dato que nos da el usuario (BB.DD) -->
         </div>
         <div>
             <label for=""
                 class="form-label">Apellido:</label><!-- El concepto de dato para el usuario(La percepción) -->
-            <input type="text" class="form-control" id=""><!-- El valor del  dato que nos da el usuario (BB.DD) -->
+            <input type="text" class="form-control"
+                id="apellido"><!-- El valor del  dato que nos da el usuario (BB.DD) -->
         </div>
         <div>
             <label for="" class="form-label"><strong>correo
                     electronico:</strong></label><!-- El concepto de dato para el usuario(La percepción) -->
-            <input type="email" class="form-control" id=""><!-- El valor del  dato que nos da el usuario (BB.DD) -->
+            <input type="email" class="form-control"
+                id="email"><!-- El valor del  dato que nos da el usuario (BB.DD) -->
         </div>
         <p class="form-text">Rellene todos los datos</p>
-        <input type="button" class="btn btn-success" onclick="" value="Enviar">
+        <!-- Botón de acceso al script -->
+        <input type="button" class="btn btn-success" onclick="entrar()" value="Enviar">
         <hr>
         <br>
-        <!-- Un ecosistema de recepcion de variable, estatico. -->
+        <!-- Un ecosistema de recepcion de variable, estatico. a través
+             de un componente de bootstrap acordeon -->
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        Acceso:
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <strong id="resultado"></strong>
                     </div>
                 </div>
             </div>
 
 
         </div>
+
+        <!-- Necesitamos que cargue la pagina, el  script y actue el alert -->
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
