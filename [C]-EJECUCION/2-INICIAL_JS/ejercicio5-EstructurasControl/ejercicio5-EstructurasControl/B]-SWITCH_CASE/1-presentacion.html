@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion Switch Case</title>
+    <!-- Libreria de Bootstrap conjunta de css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Libreria de Bootstrap conjunta de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 
+                                ==================
+                                  2. SWITCH CASE
+                                ==================
+                        
+                    Otra estructura mas que permite ejecutar diversas acciones
+                    dependiendo de determinadas configuraciones o condiciones previamente
+                    establecidas.
+                    Su esencia esta, en un conjunto de elecciones o de multiples opcciones y la
+                    necesidad de identificar una opcion, o decision concreta. Que ha de darse
+                    la  condicion que solo una de ellas se ejecute.
+                    Sintaxis:
+                     switch (condición evaluada) {
+                        case value1(string, number, variables asociadas a la condicion)
+                        ↠  Aqui tendremos todas las sentencias a ejecutar ↞
+                             break;(cierre de ejecucion cuando el case es true)
+                        case value2:
+                             break;
+                                .
+                                .
+                                .
+                              (etc)
+                            default:(entendido como un else, es decir, sino aparece ningun caso)
+                         break;
+                        }
+                    -->
+
+<div class="container" style="text-align: center;margin-top: 32px;">
+    <h2><u>Ejemplo: </u><code>Switch Case</code></h2><br>
+    <button class="btn btn-warning" onclick="identificacion()">Identificacion Género</button>
+</div>
+
+    <script>
+function identificacion() {
+    //Al definir la variable si es la que voy a comparar con las opciones
+    //será mi key
+    var sexo = prompt('Conoce tu genero!!');
+    //Control de entrada de la llave, recoger variables comparadas con una condicion
+    switch (sexo.toLocaleLowerCase()) {
+        case 'hombre'://ojo,  variable que toma en el caso es estricta (===) en su tipo y valor
+            swal('Regido por un colectivo heterosexul......');
+            break;
+            case 'mujer':
+            swal('Regido por un colectivo heterosexula......');
+            break;
+            case 'transgenero':
+            swal('Regido por un colectivo homosexual percibido......');
+            break;
+            case 'fluido':
+            swal('Regido por un colectivo no binario......');
+            break;
+            case 'binario':
+            swal('Regido por un colectivo asocia el binomio sexual al fluido......');
+            break;
+        default:
+            swal('Vea de nuevo los mundos Yupi..');
+            break;
+    }
+
+}
+    </script>
+     <!-- inyecto sweetalert -->
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
