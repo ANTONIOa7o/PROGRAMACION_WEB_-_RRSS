@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&display=swap');
+
+.centrado{
+    margin: 0 auto;
+    text-align: center;
+    padding: 18rem 0;
+    font-family: 'Orbitron',cursive;
+}
+#reloj{
+   color: black;
+   font-size: 150px;
+   margin-top: 36px;
+
+}
+#calendario{
+    font-weight: bold;
+    font-size: 30px;
+    color: darkgray;
+
+
+}
+
