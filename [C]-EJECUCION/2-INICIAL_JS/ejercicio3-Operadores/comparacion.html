@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de logica (rerlacionales y aritmetico)</title>
+</head>
+<body>
+    <!--            ===================
+                    a) Operadores Lógicos
+                    ===================
+
+        Operador                Simbolo                     Descripción
+
+    Y(copulativas)               &&                         dos sentencia o más
+                                                            todas las sentencias son true
+
+    Ó                            ||                         dos sentencias o mas
+                                                            Alguna de las sentencias será true
+
+    NO(Negaciones)                  !                       inversa de la sentencia
+
+
+                    =========================
+                    b) Operadores Aritmeticos
+                    =========================
+
+        Operador                Simbolo                     Descripcion
+
+        matematicos*            *,-,/,+
+
+        Cambio signo            -(argumento)                Cambio de signo del argumento
+
+        Incremento                  ++                       incremnto de una unidad
+
+        Decremento                  --                        decremento de una unidad
+
+        resto de division           %                       resto de la division
+
+
+                        ========================
+                        c) Operadorees Relaciones
+                        ========================
+
+        Operador                Simbolo                     Descripcion
+
+        igualdad                   ==                       igualdad aritmetica o relacional(cte)
+
+        distinto a igual            !=                      contrario al argumento que  compara
+
+        Mayor que                   >                        
+
+        Mayor o igual              >=                       Comparacion de cantidad numerica
+
+        Menor o igual               <=
+
+        Menor que                   <
+
+        igualdad estricta           ===                     Igualdad de toda la naturaleza
+                                                            de la variable(tipo y valor)
+                                                            
+
+        distinto de igualdad        !==                     Contrario al argumento que compara
+        estricta
+     -->
+
+                    
+     <script>
+        /* c) Operadores relacionales */
+
+        var numero =7;
+        
+        console.log('igualdad:  ' + (numero == 7));
+        console.log('igualdad estricta:  ' + (numero === 7));
+        console.log('Mayor que:  ' + (numero > 6));
+        console.log('Menor que:  ' + (numero < 7));
+
+        console.log('Desigualdad:  ' + (numero != 7));
+        console.log('Desigualdad estricta: ' + numero !== '7');
+
+        /* a) Operadores logicos */
+
+        var nombre1 = 'Juan';
+        var nombre2='Pepite';
+
+        console.log('condicion Y :  ' + ((nombre1 == 'Juan') && (nombre2=='Pepite')));
+        console.log('condicion O :  ' + ((nombre1 == 'Juan') || (nombre2=='Pepita')));
+
+        /* console.log('negacion de sentencias:  ' + (nombre2 !== 'Pepite')); */
+        console.log('negacion de sentencias:  ' + !(nombre2 == 'Pepite'));
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+</html>

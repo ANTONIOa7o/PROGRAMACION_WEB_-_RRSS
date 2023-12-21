@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+</head>
+<body>
+    <!-- 
+            ✔ Como ya habiamos visto, todos los datos que recogemos a través de 
+            nuestro Cliente(Browser) serán de tipo string. Para ellos necesitamos
+            trasformar ese dato en caso de uso numerico a number
+
+
+     -->
+     <!-- Arquitectura del script -->
+     <!-- 1º  declaracion de variable 
+            Variables principales
+            Variables secundarias
+            Variables de apoyo
+    -->
+    <script>
+      /*  var dato =  0;/* Aqui vemos una variable  implicita
+        dato = prompt('Escribe un numero');/*  Variable, valor y metodo explicito 
+                            ↓
+        */
+
+        var dato = prompt('Escribe un numero decimal');
+        console.log(dato);
+        console.log(dato +  ' que tipo es: ' + typeof(dato));
+
+        /*  
+                    --CONVERSIONES DE LAS CADENAS DE TEXO--
+            Habrá 2 metodos principales:
+
+            a)parseFloat()
+                    -Convertirá el argumento string devolviendo un numero de punto
+                    flotante, es decir, si el primer caracter no se puede convertir a
+                    numero no devolvera un NaN, asociado a un NULL
+                    -Si es capaz de reconocer el primer caracter en numero, seguirá construyendo
+                    la estructura numerica y cuando identifica el decimal, es decir, la coma
+                    continua construyecto el argumento numerico
+
+            b)parseInt()
+                   -Convertirá el argumento string devolviendo un numero entero;
+                   es decir, si el primer caracter no puede convertir en numero,  Nan, y asociado
+                   a un null.
+                   -El funcionamiento de dicho metodo, es similar al float, pero inverso, al percibir
+                   el punto, lo abservará y no continuará la construccion del argumento numerico
+                    
+
+        */
+       /* a) */
+       var real = parseFloat(dato);
+       console.log(real +  'que  tipo de variable es: ' + typeof(real));
+       console.log('dto creado a la variable: ' + real*0.1);
+
+       /* b) */
+       var entero =parseInt(dato);
+       console.log(entero);
+       console.log('Total a pagar: ' + ((entero) - (0.5)));
+
+    </script>
+</body>
+</html>

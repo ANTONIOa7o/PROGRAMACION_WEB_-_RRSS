@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llamadas de JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* Comentarios
+        Podemos ver que las llamadas de una funcion, va entre parentesis
+        una funcion mas de visualizacion o llamada al usuario
+        Sintaxis:
+        document.write('texto o caracteres')
+    apunta ↑        ↑
+    al document   el metodo
+        */
+
+        // doble slash permite comentar solo una linea
+        document.write('<h2>Hola desde esta pagina javaScript🚀');
+    </script>
+
+    <h1>Visualizaciones del usuario</h1>
+
+    <script>
+
+        document.write("Hola desde esta pagina javaScript 2🚀");
+
+    </script>
+    <script>
+        /* Conatos de administrador
+        Lugar de visualizacion de datos, textos, errores, variables ...es decir, es un inspector
+        que encontramos en la consola
+        Sintaxis:
+        console.log()
+        
+        */
+        console.log('hola....');
+        /* Diferencia entre caracter y operador
+        veremos que las comillas son un entorno de caracteres
+        */
+        console.log('3 + 4 ');
+        console.log(3 + 4);
+        /* Concatenacion con el simbolo + */
+        console.log('tengo ' + 18 + "años");
+
+    </script>
+    <script>
+        /* Modificar la visualizacion del alert */
+        alert("Enhorabuena!, eres el cliente nº 1000, dale a aceptar para recoger tu premio");
+    </script>
+
+    <script>
+
+        swal("Enhorabuena!, eres el cliente nº 1000, dale a aceptar para recoger tu premio");
+
+        swal({ title: "Enhorabuena!eres el cliente nº 1000", 
+        text: "dale a aceptar para recoger tu premio!",
+         icon: "success", 
+         button: "Accede a tu premio>>", 
+        });
+        /*  any []; */
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
